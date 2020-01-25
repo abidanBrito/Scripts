@@ -7,10 +7,10 @@ def remove_leading_space(line):
     char_index = 0
     while line[char_index] == ' ' or line[char_index] == '\t':
         char_index += 1
+        
     return line[char_index:]
 
 for filename in file_list:
-
     if filename.endswith("py") or filename.startswith("stb"):
         continue
 
